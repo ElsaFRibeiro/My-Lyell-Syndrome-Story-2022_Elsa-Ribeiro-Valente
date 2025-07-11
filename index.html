@@ -41,14 +41,20 @@
             border-radius: 0.5rem;
             margin-bottom: 2rem;
         }
-        /* Image styling adjusted for much smaller size within a single column */
+        /* Image styling adjusted for much smaller size and inline display */
         .content-image {
             max-width: 300px; /* Set max-width to 300px */
             height: auto;
             border-radius: 0.75rem;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-            margin: 1.5rem auto; /* Center image and add vertical spacing */
-            display: block; /* Ensures margin: auto works for centering */
+            margin: 0.5rem; /* Reduced margin for inline display */
+            display: inline-block; /* Allows images to sit next to each other */
+            vertical-align: middle; /* Aligns images nicely in the line */
+        }
+        .image-gallery {
+            text-align: center; /* Center the images block */
+            margin-top: 3rem; /* Add some space above the gallery */
+            margin-bottom: 3rem; /* Add some space below the gallery */
         }
     </style>
 </head>
@@ -76,7 +82,6 @@
                 <p class="mb-4">My memories from that time are fractured. I remember not being able to see, feeling confused, and being examined by many doctors. I was transferred by helicopter from CHL Strassen to the <strong>burn unit in Metz, France</strong>, as my condition deteriorated rapidly.</p>
                 <p class="mb-4">There, the doctors stopped all my medications to identify the cause. They discovered that <strong>Lamictal</strong> had triggered a rare and severe allergic reaction: <strong>Lyell syndrome</strong>, also known as <strong>Toxic Epidermal Necrolysis (TEN)</strong>—a life-threatening condition involving widespread blistering and peeling of the skin and mucous membranes.</p>
                 <p class="mb-4">In my case, <strong>85% of my body was affected</strong>. My knees, feet, and hands were the least affected, but my <strong>nail beds were permanently damaged</strong>, and I no longer have normal nails. I was in excruciating pain. My husband was told my chances of survival were minimal—essentially 50/50.</p>
-                <img src="20220426_172507.jpg" alt="Person with an eye patch and swollen face, looking down." class="content-image">
             </section>
 
             <!-- The ICU: Living a Nightmare -->
@@ -86,7 +91,6 @@
                 <p class="mb-4">This was caused by <strong>ICU delirium</strong>, which can happen due to high fever, severe inflammation, strong medications (like opioids and sedatives), sleep deprivation, and total sensory overload. It wasn’t mental illness—it was my brain trying to make sense of a body in extreme distress.</p>
                 <p class="mb-4">I was terrified of dying. I remember asking every doctor I saw if I was going to die, and receiving hesitant, uncertain answers. I didn’t believe any of the visits I received were real.</p>
                 <p class="mb-4">I was confused, blind, and couldn’t understand why I had tubes in my mouth and nose, why my hair had been shaved off, or why I was covered in bandages. I couldn’t walk. The pain and fear were all-consuming.</p>
-                <img src="20220712_110140.jpg" alt="Person in a hospital bed wearing dark glasses and a face mask, with an arm band visible." class="content-image">
             </section>
 
             <!-- Finding Reality Again -->
@@ -95,7 +99,6 @@
                 <p class="mb-4">After about a month, something shifted. My brother visited and I asked him a personal question that only he would know the answer to. When he responded correctly, I knew he was real—and slowly, reality began to return.</p>
                 <p class="mb-4">I came to understand that something catastrophic had happened to me. My husband was by my side, relieved that I had survived. I was transferred back to <strong>CHL in Luxembourg</strong>, where I remained hospitalized for <strong>seven more months</strong>.</p>
                 <p class="mb-4">I had lost nearly all my vision and was told I would likely <strong>never see again</strong>. My right eye had developed a severe ulcer, and inflammation was widespread. My mucous membranes were gone, making eating extremely difficult. I fell into a deep depression.</p>
-                <img src="20220430_172245.jpg" alt="Upside-down photo of a person with an eye patch, a man smiling, and a young girl smiling." class="content-image">
             </section>
 
             <!-- Learning to Live Again -->
@@ -105,7 +108,6 @@
                 <p class="mb-4">But emotionally, I was still in denial and deeply depressed. My appearance had changed drastically, and we decided it was best not to have my daughter visit me until I improved. It was heartbreaking—I missed so many months of her life.</p>
                 <p class="mb-4">Eventually, thanks to a skilled ophthalmologist at CHL Luxembourg, I was referred to the <strong>CHU hospital in Liège</strong>, Belgium, where I met a <strong>corneal specialist</strong>. After trying many options, they fitted me with <strong>scleral lenses</strong>—custom lenses designed for people with severe corneal damage like mine.</p>
                 <p class="mb-4">The first time I put them in, I could actually <strong>see something</strong> again. It wasn’t much, but it was more than I’d had in months.</p>
-                <img src="20220524_165714.jpg" alt="Person wearing dark sunglasses in a hospital gown, looking forward." class="content-image">
             </section>
 
             <!-- Returning Home -->
@@ -126,12 +128,11 @@
                 <h2 class="text-2xl font-semibold mb-4">Living Today</h2>
                 <p class="mb-4">Today, I live a very different life than I did before—but it is still my life, and I choose to live it fully.</p>
                 <p class="mb-4">My vision remains <strong>severely limited</strong>. It fluctuates—some days are slightly better than others, but the inflammation is constant. I have no natural tear production, so I must put <strong>eye drops in every 3 minutes</strong>, sometimes even more often. It’s relentless. People often see the drops running down my face and ask gently, “Are you crying?” I usually just smile, but it’s hard to explain that no, I’m not crying—this is just <strong>how I have to live now</strong>.</p>
-                <p class="mb-4">My eyes are always <strong>red, irritated, and swollen</strong>. I wear dark glasses to protect myself from even moderate light. Without them, the world is a painful blur. My hands—while still functional—are visibly scarred, and my <strong>nail beds are permanently damaged</strong>, leaving me without normal nails. When I go out in public, people sometimes stare. I see it. I feel it. It hurts—but I keep going.</p>
+                <p class="mb-4">My eyes are always <strong>red, irritated, and swollen</strong>. I wear dark glasses to protect myself from even moderate light. Without them, the world is a painful blur. My hands—while still functional—are visibly scarred, and my <strong>nail beds are permanently damaged</strong>, leaving me without normal nails. When I go out in public, people sometimes stare. I see it. I feel it. It. It hurts—but I keep going.</p>
                 <p class="mb-4">The <strong>scars on my skin</strong> are scattered everywhere—on my arms, legs, chest, neck. They’ve faded over time thanks to <strong>laser treatments</strong>, but they are still there, still reminders. I’ve gained some weight due to inactivity, stress, and medications. But I now go to the <strong>gym every day</strong>, not just for my body, but for my mind. It’s a space where I remind myself that I am still strong.</p>
                 <p class="mb-4">I’ve learned how to eat slowly to avoid choking, since I permanently lost much of my mucous membranes. I’ve developed a <strong>“survival routine”</strong>—eye drops, special foods, protective glasses, medications, light management. My vision will likely never improve beyond what I have now. My eyes will stay chronically inflamed. But still— I can see something. I can see my daughter. I can see my husband. I can see the world—imperfectly, but enough.</p>
                 <p class="mb-4">I’ve also found a new passion: <strong>metalsmithing</strong>. With the limited vision I have—about 10 cm of functional sight—I’ve started learning to create jewelry in silver. It’s slow, precise, and deeply satisfying. It gives me something of my own. Something beautiful I can create with my hands, despite all they’ve been through.</p>
                 <p class="mb-4">No, life isn’t what it was. It’s hard. But I’m here. I survived. I’m still learning, still growing, still trying to build something meaningful from what was nearly taken from me.</p>
-                <img src="20220702_190256.jpg" alt="Person holding a sleeping child on a couch, with visible scars on the arm." class="content-image">
             </section>
 
             <!-- Why I'm Telling My Story -->
@@ -142,11 +143,23 @@
                 <p class="mb-4">There is help. There is hope. And even after unimaginable pain, there can still be life.</p>
                 <p class="mb-4">Thank you to my family, especially my husband, who stood by me every step of the way. Thank you to the <strong>burn unit in Metz</strong>, the doctors at <strong>CHL Strassen</strong>, and the specialists at <strong>CHU Liège</strong>—you gave me a second chance.</p>
             </section>
+
+            <!-- Image Gallery at the end -->
+            <section class="image-gallery">
+                <h2 class="text-2xl font-semibold mb-4 text-center">Images from My Journey</h2>
+                <div class="flex flex-wrap justify-center items-center">
+                    <img src="20220426_172507.jpg" alt="Person with an eye patch and swollen face, looking down." class="content-image">
+                    <img src="20220712_110140.jpg" alt="Person in a hospital bed wearing dark glasses and a face mask, with an arm band visible." class="content-image">
+                    <img src="20220430_172245.jpg" alt="Upside-down photo of a person with an eye patch, a man smiling, and a young girl smiling." class="content-image">
+                    <img src="20220524_165714.jpg" alt="Person wearing dark sunglasses in a hospital gown, looking forward." class="content-image">
+                    <img src="20220702_190256.jpg" alt="Person holding a sleeping child on a couch, with visible scars on the arm." class="content-image">
+                </div>
+            </section>
         </main>
 
         <!-- Footer -->
         <footer class="text-center text-gray-500 text-sm mt-8 pb-8">
-            <p>&copy; 2025 My Lyell Story. All rights reserved. EV</p>
+            <p>&copy; 2025 My Lyell Story. All rights reserved. EFRV</p>
         </footer>
     </div>
 </body>
